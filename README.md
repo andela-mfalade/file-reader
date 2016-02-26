@@ -1,4 +1,4 @@
-# pdf-text-extractor
-Very basic script to extract all texts from a given pdf, Msword or image file.
+# File Reader 
+Very basic script to extract all the texts within a given pdf, MsWord or image file.
 
 
