@@ -1,7 +1,4 @@
-"""Read a pdf file.
-
-I would have sworn that that is very obvious
-"""
+"""Read a pdf file."""
 
 import sys
 import time
@@ -10,10 +7,7 @@ import pyPdf
 
 
 def read_pdf_file(path):
-    """Read a pdf file.
-
-    I would have sworn that that is very obvious
-    """
+    """Read a pdf file."""
     content = ""
     pdf = pyPdf.PdfFileReader(file(path, "rb"))
     for i in range(0, pdf.getNumPages()):
@@ -22,31 +16,20 @@ def read_pdf_file(path):
 
 
 def sys_exit(feedback):
-    """End process with exit code of 1.
-
-    I would have sworn that that is very obvious
-    """
+    """End process with exit code of 1."""
     sys_print(feedback)
     time.sleep(0.5)
     sys.exit(1)
 
 
 def sys_print(text_list):
-    """Print given text to command line.
-
-    I would have sworn that that is very obvious
-    """
-    sys.stdout.write("<><><><><><><><><><><><>\n")
+    """Print given text to command line."""
     for text in text_list:
         sys.stdout.write(text)
-    sys.stdout.write("<><><><><><><><><><><><>\n")
 
 
 def main():
-    """Read a pdf file.
-
-    I would have sworn that that is very obvious
-    """
+    """Read a pdf file."""
     if len(sys.argv) < 2:
         feedback = [
             "Please specify a file path,\n\n",
